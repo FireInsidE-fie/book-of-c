@@ -3,3 +3,4 @@
 *.debug
 .vscode
 .vscode/*
+.vscode/settings.json
