@@ -1,6 +1,7 @@
-*.out
-*.o
-*.debug
+*/*.out
+*/*.o
+*/*.debug
+*/build
 .vscode
 .vscode/*
 .vscode/settings.json

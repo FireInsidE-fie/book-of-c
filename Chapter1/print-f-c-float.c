@@ -22,9 +22,9 @@ main() {
 
         printf("%3.0f\t%3.2f\t+ %2.0f\n", fahr, celsius, step);
         /*
-        * formating here is just "intargument(width3 and no decimal) tab 
-        * intargument(width3 and decimal width2) tab+ 
-        * intargument (width 2 and no decimal) newline"
+        *   formating here is just "intargument(width3 and no decimal) tab 
+        *   intargument(width3 and decimal width2) tab+ 
+        *   intargument (width 2 and no decimal) newline"
         */
         fahr = fahr + step;
     }
