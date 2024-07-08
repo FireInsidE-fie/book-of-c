@@ -2,6 +2,7 @@
 */*.o
 */*.debug
 */build
+build
 .vscode
 .vscode/*
 .vscode/settings.json
