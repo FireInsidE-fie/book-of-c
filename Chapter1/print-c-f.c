@@ -6,12 +6,15 @@
 main() {
     float lower, upper, step;
     float celsius, fahrenheit;
+    char header[] = "Conversion table from celsius to fahrenheit";
 
     lower = -20.0;
-    upper = 120.0;
-    step = 20.0;
+    upper = 50.0;
+    step = 5.0;
 
     celsius = lower;
+
+    printf("%s\n", header);
 
     while (celsius <= upper)
     {
