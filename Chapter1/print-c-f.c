@@ -16,9 +16,9 @@ main() {
 
     printf("%s\n", header);
 
-    while (celsius <= upper)
-    {
+    while (celsius <= upper) {
         fahrenheit = celsius * 9 / 5 + 32;
+        
         printf("%3.0f\t%3.2f\t+ %2.0f\n", celsius, fahrenheit, step);
 
         celsius = celsius + step;
