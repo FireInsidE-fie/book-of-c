@@ -5,9 +5,11 @@
 
 main() {
     int fahr;
+    char header[] = "Conversion table from Fahrenheit to Celsius";
     
-    for (fahr = 0; fahr < 200; fahr = fahr + 20)
-    {
-        printf("", fahr, )
+    printf("%s\n", header);
+
+    for (fahr = 300; fahr >= 0; fahr = fahr - 20) {
+        printf("%3d\t%3.1f\n", fahr, (fahr-32.0) * (5.0/9.0));
     }
 }
