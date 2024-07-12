@@ -10,6 +10,10 @@ int main() {
     while (1) {
         int c = getchar();
 
+        // Program will only terminate if EOF is returned by getchar()
+        // This could be either through keyboard input (CTRL+D on unix)
+        // or when reading a file if the end of file is reached
+        // Errors in input also return an EOF signal
         if (c == EOF) {
             return 0;
         }
