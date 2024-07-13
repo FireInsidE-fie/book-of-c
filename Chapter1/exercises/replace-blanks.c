@@ -8,7 +8,7 @@ int main()
 
     while ((c = getchar()) != EOF)
     {
-        // If the last character was a blank but this one isn't, send a blank
+        // If the last character wasn't a blank, or if the current character isn't a blank, or both, print the current character
         if (last_c != ' ' || c != ' ')
             putchar(c);
         
