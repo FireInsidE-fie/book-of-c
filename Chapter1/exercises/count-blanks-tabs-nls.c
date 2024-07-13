@@ -4,7 +4,7 @@
 
 int main()
 {
-    int c, c_blank, c_tabs, c_nls = 0;
+    int c, c_blank = 0, c_tabs = 0, c_nls = 0;
 
     while ((c = getchar()) != EOF)
     {
@@ -14,13 +14,13 @@ int main()
             printf("1"); // Debug
         }
 
-        if (c == '\t')
+        else if (c == '\t')
         {
             ++c_tabs;
             printf("2"); // Debug
         }
 
-        if (c == '\n')
+        else if (c == '\n')
         {
             ++c_nls;
             printf("3"); // Debug
