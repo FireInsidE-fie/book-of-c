@@ -11,19 +11,16 @@ int main()
         if (c == ' ')
         {
             ++c_blank;
-            printf("1"); // Debug
         }
 
         else if (c == '\t')
         {
             ++c_tabs;
-            printf("2"); // Debug
         }
 
         else if (c == '\n')
         {
             ++c_nls;
-            printf("3"); // Debug
         }
     }
 
