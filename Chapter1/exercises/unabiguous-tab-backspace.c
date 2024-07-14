@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /* exercise 1-10, page 22 of the book of c
-    print intut to output but replace tabs with \t, backspace with \b and backslash with \\ */
+    print input to output but replace tabs with \t, backspace with \b and backslash with \\ */
 int main()
 {
     int c;
@@ -28,7 +28,6 @@ int main()
             putchar(c);
         }
     }
-        
-    
+
     return 0;
 }
