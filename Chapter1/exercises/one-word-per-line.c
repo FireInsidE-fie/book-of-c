@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+/* Exercise 1-12, page 23 of the book of C, first version
+    prints all input to output, one word per line */
 int main()
 {
     int c, last_c = 0;
