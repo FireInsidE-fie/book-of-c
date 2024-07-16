@@ -13,15 +13,14 @@ int main()
     {
         if ((state == IN) && (c == ' ' || c == '\t' || c == '\n'))
         {
+            putchar('\n');
             state = OUT;
         }
-        else if (state == OUT)
+        else
         {
-            printf("\n");
+            putchar(c);
             state = IN;
         }
-
-        putchar(c);
     }
 
     return 0;
