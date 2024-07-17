@@ -7,7 +7,7 @@
     prints all input to output, one word per line */
 int main()
 {
-    int c, state = IN;
+    int c, last_c, state = IN;
 
     while ((c = getchar()) != EOF)
     {
@@ -15,6 +15,7 @@ int main()
         if (c == ' ' || c == '\t' || c == '\n')
         {
             state = OUT;
+
         }
         else
         {
@@ -25,10 +26,13 @@ int main()
         if (state == IN)
         {
             putchar(c);
+            last_c = c;
         }
-        else if (state == OUT)
+        // Only output a new line if the last character wasn't one
+        else if (last_c != '\n' && state == OUT)
         {
             putchar('\n');
+            last_c = '\n';
         }
     }
 
