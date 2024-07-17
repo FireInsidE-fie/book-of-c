@@ -11,15 +11,24 @@ int main()
 
     while ((c = getchar()) != EOF)
     {
-        if ((state == IN) && (c == ' ' || c == '\t' || c == '\n'))
+        // Test if inside a word or not
+        if (c == ' ' || c == '\t' || c == '\n')
         {
-            putchar('\n');
             state = OUT;
         }
         else
         {
-            putchar(c);
             state = IN;
+        }
+
+        // Put character depending on state
+        if (state == IN)
+        {
+            putchar(c);
+        }
+        else if (state == OUT)
+        {
+            putchar('\n');
         }
     }
 
