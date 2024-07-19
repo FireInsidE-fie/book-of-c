@@ -6,7 +6,10 @@
 #define MAX_LENGTH 50  // max word length in input
 
 /* Exercise 1-13 page 25 of the book of C
-    Draw a histogram of the length of the words inputted */
+    Draw a histogram of the length of the words inputted (using arrays) */
+
+/* NOTE TO SELF : DO NOT STORE THE WORDS, ONLY STORE THEIR LENGTH SO IT'S EASIER
+    TO DRAW THE HISTOGRAM LATER (AND TAKES LESS MEMORY PRESUMABLY) */
 int main()
 {
     int c = 'a', n_words = 0, state = 0;
@@ -17,10 +20,12 @@ int main()
     {
         // putchar(c);  // Debug
 
+        // If blankspace, then out of a word
         if (c == ' ' || c == '\t' || c == '\n')
         {
             state = OUT;
         }
+        // If not already in a word, then count a new word
         else if (state != IN)
         {
             state = IN;
