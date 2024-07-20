@@ -13,11 +13,33 @@
 	TO DRAW THE HISTOGRAM LATER (AND TAKES LESS MEMORY PRESUMABLY) */
 int main()
 {
+	int state = 0;  // Determines if inside a word or not (see `#define`s)
 	// Operators for the while loops
+	int c = 'a';  // Stores a character
 	int i = 0;
 	int j = 0;
 
 	/* Get the words from the input - TO BE WRITTEN */
+
+	while ((c = getchar()) != EOF)
+	{
+		// Set state depending on if currently inside a word or not
+		if (c == ' ' || c == '\t' || c == '\n')
+		{
+			state = OUT;
+		}
+		else
+		{
+			state = IN;
+		}
+		
+		// Add length to the current index in the lengths array if in a word
+		if (state == IN)
+		{
+			/* code */
+		}
+		
+	}
 
 	/* Placeholder while we wait for word inputting code and direct
 		translation to word lengths */
