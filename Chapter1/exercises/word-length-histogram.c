@@ -12,34 +12,24 @@
 	TO DRAW THE HISTOGRAM LATER (AND TAKES LESS MEMORY PRESUMABLY) */
 int main()
 {
-	int c = 'a', n_words = 0, state = 0;
-	char words[MAX_WORDS][MAX_LENGTH];  // words array
+	/* Get the words from the input - TO BE WRITTEN */
+	/* Placeholder */
 
-	/* count words */
-	while ((c = getchar()) != EOF)
+	char words[MAX_WORDS][MAX_LENGTH] = {"TEST1", "TEST2", "TEST3", "TEST4", 
+	"TEST5", "TEST6", "TEST7", "TEST8", "TEST9", "TEST10"};
+
+	/* Get the length for all the words - TO BE WRITTEN */
+
+
+	/* Print out the histogram - TO BE WRITTEN */
+
+	int i = 0;
+	while (i < MAX_WORDS)
 	{
-		// putchar(c);  // Debug
-
-		// If blankspace, then out of a word
-		if (c == ' ' || c == '\t' || c == '\n')
-		{
-			state = OUT;
-		}
-		// If not already in a word, then count a new word
-		else if (state != IN)
-		{
-			state = IN;
-			++n_words;
-		}
+		printf("%s\n", words[i]);  // debug
+		++i;
 	}
-
-	printf("Number of words: %d\n", n_words);
-
-	/* print histogram */
-	printf("Histogram of word length:\n");
-	for (int i = 0; i <= MAX_WORDS ; ++i) {
-		printf("%s\n", words[i]);
-	}
+	
 
 	return 0;
 }
