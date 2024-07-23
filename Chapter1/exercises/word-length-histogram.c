@@ -55,6 +55,7 @@ int main()
 	"TEST5", "TEST6", "TEST7", "TEST8", "TEST9", "TEST10"};
 
 	/* debug - print out the words array */
+	printf("== DEBUG - Print words array ==\n");
 	i = 0;
 	while (i < MAX_WORDS)
 	{
@@ -79,6 +80,7 @@ int main()
 	
 	/* Print out the histogram - TO BE WRITTEN */
 
+	printf("\n== Begin histogram ==\n");
 	i = 0;
 	while (i < MAX_WORDS)
 	{
