@@ -13,7 +13,9 @@
 	TO DRAW THE HISTOGRAM LATER (AND TAKES LESS MEMORY PRESUMABLY) */
 int main()
 {
+	int lengths[MAX_WORDS];
 	int state = 0;  // Determines if inside a word or not (see `#define`s)
+	int last_c = 0;
 	// Operators for the while loops
 	int c = 'a';  // Stores a character
 	int i = 0;
@@ -32,21 +34,25 @@ int main()
 		{
 			state = IN;
 		}
-		
+
+		last_c = c;
+
 		// Add length to the current index in the lengths array if in a word
 		if (state == IN)
 		{
-			/* code */
+			++lengths[i];
 		}
-		
+		// Go to the next array once the current word is over
+		else if (last_c != '\n')
+		{
+			// code
+		}
 	}
 
 	/* Placeholder while we wait for word inputting code and direct
 		translation to word lengths */
 	char words[MAX_WORDS][MAX_LENGTH] = {"TEST1", "TEST2", "TEST3", "TEST4", 
 	"TEST5", "TEST6", "TEST7", "TEST8", "TEST9", "TEST10"};
-
-	int lengths[MAX_WORDS];
 
 	/* debug - print out the words array */
 	i = 0;
