@@ -15,7 +15,7 @@ int main()
 {
 	int lengths[MAX_WORDS];
 	int state = 0;  // Determines if inside a word or not (see `#define`s)
-	int last_c = 0;
+	int last_c = 0;  // Contains the last processed character
 	// Operators for the while loops
 	int c = 'a';  // Stores a character
 	int i = 0;
@@ -43,7 +43,8 @@ int main()
 			++lengths[i];
 		}
 		// Go to the next array once the current word is over
-		else if (last_c != '\n')
+		else if (last_c != ' ' && last_c != '\t' && last_c != '\n' &&
+				state == OUT)
 		{
 			// code
 		}
@@ -78,7 +79,7 @@ int main()
 		++i;
 	}
 	
-	/* Print out the histogram - TO BE WRITTEN */
+	/* Print out the histogram */
 
 	printf("\n== Begin histogram ==\n");
 	i = 0;
@@ -95,6 +96,7 @@ int main()
 		printf("\n");  // Print a new line after a histogram bar is printed
 		++i;
 	}
+	printf("== End histogram ==");
 
 	return 0;
 }
