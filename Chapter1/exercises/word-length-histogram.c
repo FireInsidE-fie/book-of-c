@@ -52,15 +52,6 @@ int main()
 	
 	printf("\n== Input ends ==\n");
  
-	// // debug - Print out the lengths array
-	// i = 0;
-	// while (i <= MAX_WORDS - 1)
-	// {
-	// 	printf("%d ", lengths[i]);
-	// 	++i;
-	// }
-	// printf("\n");
-
 	/* Print out the histogram */
 
 	printf("\n== Begin histogram ==\n");
@@ -74,7 +65,6 @@ int main()
 			++j;
 		}
 
-		// printf("%d\n", lengths[i]);  // debug
 		printf("\n");  // Print a new line after a histogram bar is printed
 		++i;
 	}
