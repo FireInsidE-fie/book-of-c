@@ -51,7 +51,7 @@ int main()
 	}
 	
 	printf("\n== Input ends ==\n");
-	
+ 
 	// // debug - Print out the lengths array
 	// i = 0;
 	// while (i <= MAX_WORDS - 1)
@@ -68,7 +68,7 @@ int main()
 	while (i < MAX_WORDS)
 	{
 		j = 0;
-		while (j <= lengths[i])
+		while (j < lengths[i])
 		{
 			putchar('-');
 			++j;
