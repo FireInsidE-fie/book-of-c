@@ -9,19 +9,17 @@
 /* Exercise 1-13 page 25 of the book of C
 	Draw a histogram of the length of the words inputted (using arrays) */
 
-/* NOTE TO SELF : DO NOT STORE THE WORDS, ONLY STORE THEIR LENGTH SO IT'S EASIER
-	TO DRAW THE HISTOGRAM LATER (AND TAKES LESS MEMORY PRESUMABLY) */
 int main()
 {
 	int lengths[MAX_WORDS] = {0};
 	int state = 0;  // Determines if inside a word or not (see `#define`s)
 	int last_c = 0;  // Contains the last processed character
-	// Operators for the while loops
+	// -- Operators for the while loops --
 	int c = 'a';  // Stores a character
 	int i = 0;
 	int j = 0;
 
-	/* Initialize array */
+	printf("\n== Input begins ==\n");
 
 	/* Get the words from the input */
 
@@ -51,15 +49,17 @@ int main()
 
 		last_c = c;
 	}
-
-	// debug - Print out the lengths array
-	i = 0;
-	while (i <= MAX_WORDS - 1)
-	{
-		printf("%d ", lengths[i]);
-		++i;
-	}
-	printf("\n");
+	
+	printf("\n== Input ends ==\n");
+	
+	// // debug - Print out the lengths array
+	// i = 0;
+	// while (i <= MAX_WORDS - 1)
+	// {
+	// 	printf("%d ", lengths[i]);
+	// 	++i;
+	// }
+	// printf("\n");
 
 	/* Print out the histogram */
 
