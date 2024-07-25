@@ -12,13 +12,14 @@ int main(void)
 	// Characters to count
 	int characters[N_CHARACTER] = {'a', 'e', 'i', 'u', 'o', 'y'};
 
-	i = 0;
 	while ((c = getchar()) != EOF)
 	{
+		i = 0;
 		while (i < N_CHARACTER - 1)
 		{
 			if (c == characters[i])
 			{
+				printf("Detected character %d!\n", characters[i]);  // Debug
 				++frequencies[i];
 			}
 			++i;
