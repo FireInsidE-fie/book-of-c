@@ -1,10 +1,8 @@
 #include <stdio.h>
-#include <string.h>
 
 #define IN 1  // state inside a word
 #define OUT 2  // state outside a word
 #define MAX_WORDS 10  // max words in input
-#define MAX_LENGTH 50  // max word length in input
 
 /* Exercise 1-13 page 25 of the book of C
 	Draw a histogram of the length of the words inputted (using arrays) */
