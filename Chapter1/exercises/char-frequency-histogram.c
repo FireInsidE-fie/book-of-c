@@ -1,21 +1,37 @@
 #include <stdio.h>
 
-#define N_CHARACTER 5
+#define N_CHARACTER 6
 
 /* Exercise 1-14 page 25 of the book of C
-    print a histogram of the frequency of different characters in input */
+	print a histogram of the frequency of different characters in input */
 int main(void)
 {
-    int i;  // While loop operator
-    int c;  // Contains a character in while loops
-    int frequencies[N_CHARACTER] = {0};
+	int i;  // While loop operator
+	int c;  // Contains a character in while loops
+	int frequencies[N_CHARACTER] = {0};  // Frequencies the characters appear
+	// Characters to count
+	int characters[N_CHARACTER] = {'a', 'e', 'i', 'u', 'o', 'y'};
 
-    while ((c = getchar()) != EOF)
-    {
-        putchar(c);
-    }
-    
-    
-    return 0;
+	i = 0;
+	while ((c = getchar()) != EOF)
+	{
+		while (i < N_CHARACTER - 1)
+		{
+			if (c == characters[i])
+			{
+				++frequencies[i];
+			}
+			++i;
+		}
+	}
+	
+	i = 0;
+	while (i < N_CHARACTER - 1)
+	{
+		printf("%d", frequencies[i]);
+		++i;
+	}
+
+	return 0;
 }
 
