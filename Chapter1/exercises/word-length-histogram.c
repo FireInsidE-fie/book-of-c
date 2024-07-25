@@ -6,7 +6,6 @@
 
 /* Exercise 1-13 page 25 of the book of C
 	Draw a histogram of the length of the words inputted (using arrays) */
-
 int main()
 {
 	int lengths[MAX_WORDS] = {0};
@@ -70,3 +69,8 @@ int main()
 
 	return 0;
 }
+
+/* POTENTIAL IMPROVEMENTS 
+	Make the program adapt to the number of words inputted instead of having
+	a hard limit;
+	*/
