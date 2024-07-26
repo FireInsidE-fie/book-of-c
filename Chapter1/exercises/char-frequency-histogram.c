@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define N_CHARACTER 6
+#define N_CHARACTER 6  // The number of characters that will be scanned for
 
 /* Exercise 1-14 page 25 of the book of C
 	print a histogram of the frequency of different characters in input */
@@ -33,6 +33,11 @@ int main(void)
 	i = 0;
 	while (i <= N_CHARACTER - 1)
 	{
+		// Display what characters are represented by the current line
+		putchar(characters[i]);
+		printf("\t");
+
+		// Print the lines for the times the character was counted
 		j = 0;
 		while (j < frequencies[i])
 		{
