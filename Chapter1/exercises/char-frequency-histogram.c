@@ -7,19 +7,11 @@
 int main(void)
 {
 	int i;  // While loop operator
-	int y;  // While loop operator
+	int j;  // While loop operator
 	int c;  // Contains a character in while loops
 	int frequencies[N_CHARACTER] = {0};  // Frequencies the characters appear
 	// Characters to count
 	int characters[N_CHARACTER] = {'a', 'e', 'i', 'u', 'o', 'y'};
-
-	// debug
-	i = 0;
-	while (i <= N_CHARACTER - 1)
-	{
-		printf("%d\n\n", characters[i]);
-		++i;
-	}
 
 	// Reads the input and counts the specified characters if present
 	while ((c = getchar()) != EOF)
@@ -29,31 +21,31 @@ int main(void)
 		{
 			if (c == characters[i])
 			{
-				printf("Detected character %d!\n", characters[i]);  // Debug
 				++frequencies[i];
 			}
 			++i;
 		}
 	}
-	
-	// DEBUG - Print out the frequencies array
-	i = 0;
-	while (i <= N_CHARACTER - 1)
-	{
-		printf("%d", frequencies[i]);
-		++i;
-	}
 
 	// Print histogram
+	printf("\n== BEGIN HISTOGRAM ==\n");
+	
 	i = 0;
 	while (i <= N_CHARACTER - 1)
 	{
-		printf("%d\n", frequencies[i]);
+		j = 0;
+		while (j < frequencies[i])
+		{
+			printf("-");
+			++j;
+		}
+		
+		printf("\n");
 		++i;
 	}
 
-	printf("\n");
-
+	printf("== END HISTOGRAM ==\n");
+	
 	return 0;
 }
 
