@@ -4,5 +4,5 @@
 
 int main(void)
 {
-    printf("Hewwo world!\n");  // Actually do the work here
+	printf("Hewwo world!\n");  // Actually do the work here
 }
