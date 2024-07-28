@@ -34,10 +34,10 @@ int getline(char s[], int lim)
 
 	for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i)
 		s[i] = c;
-	if (c == '\n')
+	if (c == '\n')  // If end of line, go to the next index of s
 		s[i] = c;
 		++i;
-	s[i] = '\0';
+	s[i] = '\0';  // End the read line with a null signal
 	return i;
 }
 
@@ -47,6 +47,6 @@ void copy(char to[], char from[])
 	int i;
 
 	i = 0;
-	while ((to[i] = from[i]) != '\0')
+	while ((to[i] = from[i]) != '\0')  // 'to' has to end with the null sig
 		++i;	
 }
