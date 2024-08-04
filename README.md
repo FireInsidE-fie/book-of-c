@@ -2,7 +2,7 @@
 
 This is just a little repo of me creating little programs while following the book "The C Programming Language, second edition",
 otherwise referenced as "The book of C" in this repo.
-I also started reading beej's guide to C, available here[https://beej.us/guide/bgc/pdf/bgc_a4_c_1.pdf].
+I also started reading beej's guide to C, available [here](https://beej.us/guide/bgc/pdf/bgc_a4_c_1.pdf]).
 
 Programs in the `references` folders are copies from the book of C which I may have modified to add more features and learn a little instead of just copying blindly.
 
