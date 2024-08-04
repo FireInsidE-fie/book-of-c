@@ -21,7 +21,7 @@ main()
 			copy(longest, line);
 		}
 	}
-	if (max > 0)  // there was a line
+	if (max > 0)  // if there was a line
 		printf("%s", longest);
 
 	return 0;	

@@ -4,5 +4,9 @@
 
 int main(void)
 {
-	printf("Hewwo world!\n");  // Actually do the work here
+	int i = 2;
+	float f = 3.14;
+	char *s = "Hewwo world!";  // char * (char pointer) is the string type
+	
+	printf("%s  i = %d and f = %f!\n", s, i, f);
 }
