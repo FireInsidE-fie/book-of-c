@@ -72,5 +72,6 @@ int main()
 
 /* POTENTIAL IMPROVEMENTS 
 	Make the program adapt to the number of words inputted instead of having
-	a hard limit;
+	a hard limit- this could be achieved by initializing the lengths array
+	after all the words have been processed and counted;
 	*/
